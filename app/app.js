@@ -197,20 +197,7 @@ angular.module('uiRouterSample', [
 
         .state('instructions', {
           url: '/leaktest-instructions',
-
-          // Showing off how you could return a promise from templateProvider
-          templateProvider: ['$timeout',
-            function (        $timeout) {
-              return $timeout(function () {
-                return '<p class="lead">UI-Router Resources</p><ul>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router/tree/gh-pages/sample">Source for this Sample</a></li>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router">GitHub Main Page</a></li>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router#quick-start">Quick Start</a></li>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router/wiki">In-Depth Guide</a></li>' +
-                         '<li><a href="https://github.com/angular-ui/ui-router/wiki/Quick-Reference">API Reference</a></li>' +
-                       '</ul>';
-              }, 100);
-            }]
+          templateUrl: '/app/instructions.html'
         })
     }
   ]

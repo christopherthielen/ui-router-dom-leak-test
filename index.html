@@ -56,6 +56,7 @@
           <li ng-class="{active: $state.includes('contacts')}"><a ui-sref="contacts.list">Contacts</a></li>
           <li ui-sref-active="active"><a ui-sref="about">About</a></li>
           <li ng-click="startStop()"><a href="javascript:void(0)">{{ running ? "Stop" : "Start" }} Leak Test {{ countdown ? countdown : "" }}</a></li>
+          <li ui-sref-active="active"><a ui-sref="instructions">Instructions</a></li>
         </ul>
 
         <!-- Here is a named ui-view. ui-views don't have to be named, but we'll populate this
