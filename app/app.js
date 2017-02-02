@@ -197,7 +197,7 @@ angular.module('uiRouterSample', [
 
         .state('instructions', {
           url: '/leaktest-instructions',
-          templateUrl: '/app/instructions.html'
+          templateUrl: 'app/instructions.html'
         })
     }
   ]
